@@ -1,0 +1,93 @@
+@media screen and (max-width:1199px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 120px repeat(3, 1fr);
+    }
+    .range-controls {
+        display: none;
+    }
+    main .filters{
+        grid-row: 1/2;
+        grid-column: 1/4;
+        background-color: transparent;
+        border: 0px;
+        display: grid;
+        width: auto;
+        column-gap: 10px;
+        row-gap: 5px;
+        height: 85px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .dish {
+        width: auto;
+        min-width: 200px;
+        flex-direction: column;
+    }
+    .dish h3{
+        display: none;
+    }
+    .filters span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        border-radius: 10px;
+        height: 35px;
+        font-size: 1.2em;
+    }
+    .filters button {
+        height: 38px;
+        border-radius: 10px;
+        font-size: 1.2em;
+    }
+
+    .filters h3, .filters h4 {
+        display: none;
+    }
+    .checkbox-btn {
+        margin: 0 3px;
+    }
+    .contacts {
+        flex-direction: column;
+    }
+    .letter {
+        margin-right: 2px;
+        display: block;
+    }
+}
+@media screen and (max-width:730px){
+    .head_text{
+        height: 40px;
+    }
+    main .filters{
+        width: 90vw;
+        row-gap: 8px;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .dish h4 {
+        display: none;
+    }
+    .dish {
+        grid-column: 1/4;
+        background-color: transparent;
+        border: 0px;
+        height: auto;
+    }
+    .dish:hover{
+        box-shadow: none;
+    }
+    .filters span {
+        height: 35px;
+        font-size: 1.2em;
+    }
+    .filters button {
+        height: auto;
+        font-size: 1.2em;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
+

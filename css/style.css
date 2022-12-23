@@ -1,0 +1,209 @@
+body * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.head_text{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+form {
+    display: block;
+}
+main {
+    padding: 20px;
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+a {
+    text-decoration: none;
+}
+footer {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.letter {
+    height: 1em;
+    display: none;
+}
+.contacts {
+    display: flex;
+}
+.contacts a {
+    display: flex;
+}
+.contacts h3 {
+    margin-right: 5px;
+}
+
+main .filters {
+    border: 1px solid rgb(183, 183, 183);
+    display: flex;
+    flex-wrap: wrap;
+    grid-row: 1/4;
+    flex-direction: column;
+    align-content: center;
+    width: 250px;
+    padding: 15px 0;
+    background-color: rgb(243, 243, 243);
+    height: auto;
+    border-radius: 10px;
+}
+.filters h3{
+    flex-basis: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+.checkbox-btn span {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 10px;
+	line-height: 30px;
+	border: 1px solid rgb(124, 124, 124);
+	border-radius: 4px;
+    width: 120px;
+    text-align: center;
+}
+
+.filters button{
+    cursor: pointer;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid rgb(124, 124, 124);
+    border-radius: 3px;
+    height: 32px;
+    cursor: pointer;
+
+}
+
+.dish{
+    padding: 5px;
+    min-width: 350px;
+    height: 250px;
+    background-color: rgb(244, 244, 244);
+    border: 1px solid rgb(183, 183, 183);
+    border-radius: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+.dish h4 h3{
+    display: inline-block;
+}
+
+
+.dish:hover {
+    box-shadow: 2px 2px 2px 2px rgb(167, 167, 167);
+}
+
+.dish img{
+    width: 230px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.dish h3{
+    color: rgb(138, 138, 138);
+}
+
+.checkbox-btn {
+	margin: 10px 0;
+	position: relative;
+}
+input[type=checkbox] {
+	display: none;
+}
+
+span:hover {
+	background-color: #e3e3e3;
+}
+
+#filter1:checked ~ .filters  label[for="filter1"] span{
+    background-color: rgb(149, 149, 149);
+}
+#filter2:checked ~ .filters  label[for="filter2"] span{
+    background-color: rgb(149, 149, 149);
+}
+#filter3:checked ~ .filters  label[for="filter3"] span{
+    background-color: rgb(149, 149, 149);
+}
+#filter4:checked ~ .filters  label[for="filter4"] span{
+    background-color: rgb(149, 149, 149);
+}
+#filter5:checked ~ .filters  label[for="filter5"] span{
+    background-color: rgb(149, 149, 149);
+}
+
+input[type="checkbox"]:not(:checked) ~ .dish {
+    display: flex;
+}
+input[type="checkbox"]:checked ~ .dish {
+    display: none;
+}
+#filter1:checked ~ .tistechko {
+    display: flex;
+}
+#filter2:checked ~ .cake {
+    display: flex;
+}
+#filter3:checked ~ .rullet {
+    display: flex;
+}
+#filter4:checked ~ .syrnyky {
+    display: flex;
+}
+#filter5:checked ~ .pie {
+    display: flex;
+}
+
+.range-controls {
+    position: relative;
+  
+    margin-bottom: 12px;
+}
+  
+.range-controls .scale {
+    height: 2px;
+
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+
+    background: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+
+    width: 4px;
+    height: 4px;
+
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 80%;
+}
